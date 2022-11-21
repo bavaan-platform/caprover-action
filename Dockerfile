@@ -1,6 +1,6 @@
-FROM node:14-alpine
+FROM node:14
 
-RUN apk add --no-cache git && npm install -g caprover && npm cache clean --force
+RUN npm install -g caprover && npm cache clean --force
 
 COPY run.sh /run.sh
 
